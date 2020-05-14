@@ -103,6 +103,10 @@ body {
         letter-spacing: 0.7px;
         margin-bottom: 19px;
     }
+    &__name-top {
+        margin-top: 16px;
+        margin-left: 0;
+    }
     small {
         font-style: italic;
     }
@@ -117,5 +121,24 @@ body {
         background-image: url(../img/svg/Book.svg);
         background-repeat: no-repeat;
         flex-basis: 445px;
+    }
+}
+.page {
+    padding-top: 161px;
+}
+.block-author {
+    display: flex;
+    justify-content: space-between;
+}
+.block-ava {
+    position: relative;
+    &__svg {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+    &__img {
+        margin-top: 47px;
+        margin-right: 44px;
     }
 }
