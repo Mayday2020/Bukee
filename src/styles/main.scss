@@ -28,7 +28,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
-    padding-bottom: 50px;
+    padding-bottom: 157px;
 }
 .header {
     display: flex;
@@ -36,8 +36,8 @@ h3 {
     align-items: center;
     max-width: 1170px;
     margin: 0 auto;
-    padding-top: 38px;
-    padding-bottom: 166px;
+    padding-top: 24px;
+    padding-bottom: 178px;
     &__logo {
         display: block;
         width: 137px;
@@ -49,6 +49,7 @@ h3 {
         display: flex;
         justify-content: flex-end;
         font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
         &__item {
             margin-left: 22px;
             padding-bottom: 5px;
@@ -75,7 +76,8 @@ h3 {
         font-family: 'Open Sans', sans-serif;
         font-size: 18px;
         letter-spacing: 0.7px;
-        margin-bottom: 30px;
+        margin-bottom: 43px;
+        margin-top: 0;
     }
     &__title {
         font-size: 48px;
@@ -86,16 +88,17 @@ h3 {
             display: block;
             color: $accent-color;
             font-size: 18px;
-            margin-top: 9px;
+            margin-top: 24px;
             letter-spacing: 0.9px;
         }
     }
     &__description {
         font-family: 'Open Sans', sans-serif;
         font-size: 15px;
-        line-height: 24px;
-        margin-bottom: 24px;
-        letter-spacing: 0.7;
+        line-height: 23px;
+        margin-bottom: 28px;
+        letter-spacing: 0.76px;
+        max-width: 86%;
     }
     &__btn {
         display: block;
@@ -106,13 +109,15 @@ h3 {
         border-radius: 3px;
         text-align: center;
         margin-top: 48px;
-        padding: 14px 0;
+        padding: 13px 0;
         letter-spacing: 0.7px;
-        margin-bottom: 19px;
+        margin-bottom: 14px;
+        font-size: 18px;
     }
     &__name_top {
-        margin-top: 16px;
+        margin-top: 14px;
         margin-left: 0;
+        margin-bottom: 36px;
     }
     small {
         font-style: italic;
@@ -123,16 +128,44 @@ h3 {
     justify-content: space-between;
     &-demo {
         display: block;
+        position: relative;
         width: 445px;
         height: 643px;
         background-image: url(../img/svg/Book.svg);
         background-repeat: no-repeat;
         flex-basis: 445px;
+        &__title {
+            font-size: 36px;
+            text-transform: uppercase;
+            position: absolute;
+            right: 91px;
+            top: 118px;
+            letter-spacing: 1.2px;
+            span {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                color: $accent-color;
+                display: block;
+                text-transform: initial;
+                font-weight: normal;
+                margin-top: 10px;
+                letter-spacing: 0.6px;
+            }
+        }
+        &__author {
+                position: absolute;
+                bottom: 42px;
+                left: 87px;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                letter-spacing: 0.7px;
+                color: $accent-color;
+        }
     }
 }
 .page {
     padding-top: 161px;
-    padding-bottom: 160px;
+    padding-bottom: 145px;
     &_gray {
         background-color: $bg-light-color;
     }
@@ -145,14 +178,31 @@ h3 {
     &__subtitle {
         color: $accent-color;
         text-align: center;
-        font-size: 20px;
+        font-size: 16px;
         margin-bottom: 81px;
         margin-top: 24px;
+        letter-spacing: 1.8px;
     }
 }
 .block-author {
     display: flex;
     justify-content: space-between;
+}
+.block-author {
+    &__btn-read {
+        display: block;
+        background-color: #65e496;
+        color: #fff;
+        text-decoration: none;
+        max-width: 240px;
+        border-radius: 3px;
+        text-align: center;
+        margin-top: 46px;
+        padding: 13px 0;
+        letter-spacing: 0.75px;
+        margin-bottom: 14px;
+        font-size: 18px;
+    }
 }
 .block-ava {
     position: relative;
@@ -169,7 +219,7 @@ h3 {
 .block-counter {
     display: flex;
     justify-content: space-around;
-    margin-top: 152px;
+    margin-top: 195px;
     p {
         font-family: 'Open Sans', serif;
         text-align: center;
@@ -198,16 +248,27 @@ h3 {
         flex-basis: 41%;
         letter-spacing: 0.75px;
         &_social {
-            margin-top: 28px;
+            font-size: 18px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-top: -5px;
             letter-spacing: 1px;
             p {
-                font-size: 18px;
                 font-family: 'Roboto Slab', serif;
                 font-weight: bold;
             }
-            ul li {
-                display: inline-block;
+            ul {
+                margin-left: 23px;
+                li {
+                    display: inline-block;
+                    margin-right: 10px;
+                    a {
+                        color: $accent-color;
+                    }
+                }
             }
+            
         }
     }
     &-table {
@@ -235,7 +296,7 @@ h3 {
                     left: 0;
                     line-height: 22px;
                     color: $light-color;
-                    background-color: $accent-color;
+                    background-color: #5fc9b3;
                     padding: 0 7px;
                     font-family: 'Open Sans', serif;
                 }
