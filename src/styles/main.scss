@@ -72,7 +72,9 @@ h3 {
 }
 .block-text {
     flex-basis: calc(100% - 500px);
-    z-index: -2;
+    &-down {
+        margin-top: -20px;
+    }
     &__name {
         font-family: 'Open Sans', sans-serif;
         font-size: 18px;
@@ -104,19 +106,7 @@ h3 {
     &__btn {
         display: block;
         background: linear-gradient(to top left, #65e49c, #65e4af);
-        position: relative;
-        z-index: 1;
-        &::before {
-            content: '';
-            display: block;
-            height: 20px;
-            width: 100%;
-            background-color: #b2f1be;
-            position: absolute;
-            z-index: -1;
-            bottom: -2px;
-            border-radius: 3px;
-        }
+        box-shadow: 0 -2px #59ba88 inset;
         color: $light-color;
         text-decoration: none;
         max-width: 250px;
@@ -135,6 +125,38 @@ h3 {
     }
     small {
         font-style: italic;
+    }
+    &-item {
+        &__date {
+            font-size: 15px;
+            letter-spacing: 0.6px;
+            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 0;
+        }
+        &__title {
+            font-size: 18px;
+            letter-spacing: 0.8px;
+        }
+        &__desc {
+            font-size: 15px;
+            letter-spacing: 0.75px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        &__btn {
+            display: block;
+            background: linear-gradient(to top left, #65e49c, #65e4af);
+            box-shadow: 0 -2px #59ba88 inset;
+            color: $light-color;
+            text-decoration: none;
+            max-width: 136px;
+            border-radius: 3px;
+            text-align: center;
+            margin-top: 24px;
+            padding: 13px 0;
+            letter-spacing: 0.7px;
+            margin-bottom: 62px;
+            font-size: 18px;
+        }
     }
 }
 .block-book {
@@ -206,18 +228,7 @@ h3 {
     &__btn-read {
         display: block;
         background: linear-gradient(to top left, #65e49c, #65e4af);
-            position: relative;
-            &::before {
-                content: '';
-                display: block;
-                height: 20px;
-                width: 100%;
-                background-color: #b2f1be;
-                position: absolute;
-                z-index: -1;
-                bottom: -2px;
-                border-radius: 3px;
-            }
+        box-shadow: 0 -2px #b2f1be inset;
         color: #fff;
         text-decoration: none;
         max-width: 240px;
@@ -236,10 +247,17 @@ h3 {
         position: absolute;
         right: 0;
         z-index: -1;
+        &-left {
+            right: 165px;
+        }
     }
     &__img {
         margin-top: 47px;
         margin-right: 44px;
+        &-left {
+            margin-left: 59px;
+            margin-right: 110px;
+        }
     }
 }
 .block-counter {
@@ -334,18 +352,7 @@ h3 {
             font-size: 18px;
             color: $light-color;
             background: linear-gradient(to top left, #65e49c, #65e4af);
-            position: relative;
-            &::before {
-                content: '';
-                display: block;
-                height: 20px;
-                width: 100%;
-                background-color: #b2f1be;
-                position: absolute;
-                z-index: -1;
-                bottom: -2px;
-                border-radius: 3px;
-            }
+            box-shadow: 0 -2px #b2f1be inset;
             border: none;
             border-radius: 3px;
         }
@@ -418,18 +425,7 @@ h3 {
     display: block;
     margin: 0 auto;
     background: linear-gradient(to top left, #65e49c, #65e4af);
-    position: relative;
-    &::before {
-        content: '';
-        display: block;
-        height: 20px;
-        width: 100%;
-        background-color: #b2f1be;
-        position: absolute;
-        z-index: -1;
-        bottom: -2px;
-        border-radius: 3px;
-    }
+    box-shadow: 0 -2px #b2f1be inset;
     max-width: 220px;
     border-radius: 3px;
     text-align: center;
