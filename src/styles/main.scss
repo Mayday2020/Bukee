@@ -72,6 +72,7 @@ h3 {
 }
 .block-text {
     flex-basis: calc(100% - 500px);
+    z-index: -2;
     &__name {
         font-family: 'Open Sans', sans-serif;
         font-size: 18px;
@@ -102,7 +103,20 @@ h3 {
     }
     &__btn {
         display: block;
-        background-color: $accent-color;
+        background: linear-gradient(to top left, #65e49c, #65e4af);
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: '';
+            display: block;
+            height: 20px;
+            width: 100%;
+            background-color: #b2f1be;
+            position: absolute;
+            z-index: -1;
+            bottom: -2px;
+            border-radius: 3px;
+        }
         color: $light-color;
         text-decoration: none;
         max-width: 250px;
@@ -191,7 +205,19 @@ h3 {
 .block-author {
     &__btn-read {
         display: block;
-        background-color: #65e496;
+        background: linear-gradient(to top left, #65e49c, #65e4af);
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                height: 20px;
+                width: 100%;
+                background-color: #b2f1be;
+                position: absolute;
+                z-index: -1;
+                bottom: -2px;
+                border-radius: 3px;
+            }
         color: #fff;
         text-decoration: none;
         max-width: 240px;
@@ -307,7 +333,19 @@ h3 {
             padding: 15px 45px;
             font-size: 18px;
             color: $light-color;
-            background-color: $accent-color;
+            background: linear-gradient(to top left, #65e49c, #65e4af);
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                height: 20px;
+                width: 100%;
+                background-color: #b2f1be;
+                position: absolute;
+                z-index: -1;
+                bottom: -2px;
+                border-radius: 3px;
+            }
             border: none;
             border-radius: 3px;
         }
@@ -379,8 +417,19 @@ h3 {
 .all-books {
     display: block;
     margin: 0 auto;
-    background-color: #65e496;
-    
+    background: linear-gradient(to top left, #65e49c, #65e4af);
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        height: 20px;
+        width: 100%;
+        background-color: #b2f1be;
+        position: absolute;
+        z-index: -1;
+        bottom: -2px;
+        border-radius: 3px;
+    }
     max-width: 220px;
     border-radius: 3px;
     text-align: center;
