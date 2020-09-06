@@ -10,6 +10,7 @@ $light-color:#fff;
 $accent-color: #65e496;
 $bg-light-color: #f5f6fa;
 $bg-dark-color: #44444f;
+$grey-color: #9191b5;
 
 body {
     font-family: 'Roboto Slab', serif;
@@ -496,5 +497,54 @@ h3 {
     &__desc {
         font-size: 15px;
         font-family: 'Open sans', serif;
+    }
+}
+.block-letter {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+        flex-basis: 48.5%;
+    }
+    &__input {
+        width: 100%;
+        background-color: $bg-dark-color;
+        border-radius: 3px;
+        border: none;
+        color: $grey-color;
+        padding: 15px 15px;
+        box-sizing: border-box;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__btn {
+        display: block;
+        background: linear-gradient(to top left, #65e49c, #65e4af);
+        box-shadow: 0 -2px #59ba88 inset;
+        color: $light-color;
+        text-decoration: none;
+        width: 100%;
+        border-radius: 3px;
+        border: none;
+        text-align: center;
+        margin-top: 18px;
+        padding: 11px 0 15px 0;
+        letter-spacing: 0.7px;
+        font-size: 18px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__title {
+        font-size: 48px;
+        letter-spacing: 2px;
+        color: $bg-dark-color;
+        margin-bottom: 28px;
+    }
+    &__text {
+        font-family: 'Open sans', serif;
+        font-size: 15px;
+        letter-spacing: 0.7px;
+        margin-left: 5px;
     }
 }
