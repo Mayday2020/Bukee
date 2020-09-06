@@ -548,3 +548,55 @@ h3 {
         margin-left: 5px;
     }
 }
+.footer {
+    background-color: $bg-dark-color;
+    color: $grey-color;
+    padding: 160px 0;
+}
+.block-footer {
+    display: flex;
+    justify-content: space-between;
+    &>div {
+        max-width: 28%;
+        letter-spacing: 0.6px;
+        font-size: 15px;
+        & p {  
+            margin-bottom: 24px;
+        }
+    }
+    &__logo {
+        display: block;
+        width: 137px;
+        height: 28px;
+        margin-bottom: 24px;
+        background-image: url(../img/svg/Logo.svg);
+        
+    }
+    &__title {
+        font-size: 18px;
+        color: $accent-color;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 0;
+        &>li {
+            margin-bottom: 5px;
+        }
+    }
+    &__social {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        &>li {
+            margin-right: 13px;
+            
+            a {
+                color: $accent-color;
+            }
+            
+        }
+    }
+}
