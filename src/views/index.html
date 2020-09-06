@@ -26,6 +26,7 @@
         
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto+Slab:wght@400;100;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="../styles/main.css"> 
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     </head>
     <body>
         <div class="page-main">
@@ -174,6 +175,29 @@
                 <span class="all-books"><a href="" >Browse all books</a></span>
             </div>
         </div>
+
+        <div class="page">
+            <div class="wrap">
+                <div class="block-carousel">
+                    <div>
+                        <h3>Kate Dennings</h3>
+                        <p>Calligraphy Expert</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    </div>
+                    <div>
+                        <h3>Kate Dennings</h3>
+                        <p>Calligraphy Expert</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    </div>
+                    <div>
+                        <h3>Kate Dennings</h3>
+                        <p>Calligraphy Expert</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="page">
             <div class="wrap">
                 <div class="block-author">
@@ -299,7 +323,17 @@
         @@include("../blocks/modules/footer/footer.html")
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Place your kit's code here -->
     <script src="https://kit.fontawesome.com/a39317ee7f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.block-carousel').slick({
+                dots: true,
+                arrows: false
+            });
+        });
+    </script>
     </body>
 </html>
