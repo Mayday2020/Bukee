@@ -600,3 +600,70 @@ h3 {
         }
     }
 }
+.block-carousel {
+    text-align: center;
+    h3 {
+        color: $accent-color;
+        letter-spacing: 1.3px;
+    }
+    p {
+        color: $grey-color;
+        font-family: 'Open sans', serif;
+        letter-spacing: 0.8px;
+        max-width: 760px;
+        margin: 3px auto 33px;
+        line-height: 27px;
+    }
+    &-thumb {
+        display: block;
+        margin: 0 auto 26px;
+        position: relative;
+        overflow: hidden;
+        width: 152px;
+        height: 152px;
+        img {
+            width: 152px;
+            height: 152px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            border-radius: 100%;
+        }
+    }
+    &-expert {
+        
+        letter-spacing: 0.8px;
+    }
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    &>li {
+        margin: 0 5px;
+        &>button {
+            text-indent: -9999px;
+            width: 8px;
+            height: 8px;
+            border: none;
+            background-color: $accent-color;
+            border-radius: 100%;
+            line-height: 0px;
+            font-size: 0px;
+            cursor: pointer;
+            padding: 5px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &>li.slick-active {
+        &>button {
+            width: 37px;
+            border-radius: 10px;
+        }
+    }
+}
